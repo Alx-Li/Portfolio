@@ -1,6 +1,6 @@
 # MERN-Portfolio-Dev
 <img src="./Home layout.png">
-`still thinking of a description`
+still thinking of a description 🙃
 
 ---
 ### v0.1.0-b
