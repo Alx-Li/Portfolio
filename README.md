@@ -17,6 +17,8 @@ Major additions:
 
 Notes:
 
-Styling is so bad you think something would work but it doesnt apply when you save the files, there are so many little nuances that makes me bash my head into my desk. 
+Styling is so bad you think something would work but it doesnt apply when you save the files, there are so many little nuances that makes me bash my head into my desk.
+
+why are there so many frameworks 🥲
 
 ---
