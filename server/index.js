@@ -15,7 +15,7 @@ app.use(cors());
 app.use('/posts', postRoutes); //every route inside of postRoutes starts with /posts
 
 //mongo-db atlas with mongoose
-const CONNECTION_URL = 'mongodb+srv://axli-tech:pD6UFhdgGj6uvd@portfolio-database.x9ts2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; // this line is vulnerable
+const CONNECTION_URL = 'mongodb+srv://test:123@portfolio-database.x9ts2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'; // this line is vulnerable
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
