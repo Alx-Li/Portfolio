@@ -1,4 +1,5 @@
 # MERN-Portfolio-Dev
+<img src="./Home layout.png">
 `still thinking of a description`
 
 ---
