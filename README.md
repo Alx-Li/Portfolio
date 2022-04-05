@@ -2,12 +2,15 @@
 <img src="./Home layout.png">
 still thinking of a description 🙃
 ---
+
 ### v0.1.1-b
 Hidden set up env variables
+
 ```
 PORT = ###
 CONNECTION_URL = ****
 ```
+
 ---
 ### v0.1.0-b
 First commit after doing some work on the front end and figuring out how to set up and communicate between the front and back end. Huge thanks to the tutorials from [JavaScript Mastery](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A) as it would have been much more difficult to figure out everything from just reading documentation.
