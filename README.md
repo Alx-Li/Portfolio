@@ -32,8 +32,6 @@ Major additions:
 - Logos animated
   - Credits to the [SVGO](https://github.com/svg/svgo) and [Vivus](https://github.com/maxwellito/vivus) libraries/tools for cleaning my svg and animating.
 
----
-
 
 
 
