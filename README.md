@@ -5,7 +5,7 @@ still thinking of a description 🙃
 ---
 
 ### v0.1.1-b
-Hidden set up env variables
+Hidden & set up env variables
 
 ```
 PORT = ###
