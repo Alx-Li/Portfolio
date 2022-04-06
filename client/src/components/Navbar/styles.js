@@ -9,12 +9,12 @@ export default makeStyles((theme) => ({
     },
     logo: {
         height: '2.5em',
-        margin: theme.spacing(1.5),
-        marginRight: theme.spacing(4)
+        margin: theme.spacing(1),
+        marginRight: theme.spacing(3)
     },
     navButton: {
-        marginLeft: theme.spacing(1.3),
-        marginRight: theme.spacing(1.3),
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
         fontSize: 'large',
         color: theme.palette.primary.light,
     },

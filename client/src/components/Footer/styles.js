@@ -3,17 +3,30 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     footer: {
         background: '#ffffff',
-        height: '10rem',
+        height: '7.2rem',
+        [theme.breakpoints.down('sm')]: {
+            height: '18rem',
+        },
+        [theme.breakpoints.down(682)]: {
+            height: '20rem',
+        },
+        [theme.breakpoints.down(419)]: {
+            height: '22rem',
+        },
+        [theme.breakpoints.down(365)]: {
+            height: '23rem',
+        },
+        [theme.breakpoints.down(330)]: {
+            height: '26rem',
+        },
+        [theme.breakpoints.down(296)]: {
+            height: '28rem',
+        },
     },
     logo: {
         height: '5em',
         margin: theme.spacing(2.5),
         marginRight: theme.spacing(4)
-    },
-    header: {
-        background: '#ffffff',
-        position: 'fixed',
-        height: '4rem',
     },
     icoButton: {
         marginRight: theme.spacing(0.5),
@@ -29,9 +42,34 @@ export default makeStyles((theme) => ({
     },
     listIco:{
         fontFamily: 'Gill Sans MT',
-        fontSize: '1em',
         display: 'flex',
-        justifyContent: 'right'
+        justifyContent: 'center',
+        color: theme.palette.secondary.light,
+
+    },
+    footerContentBox: {
+        width: '13rem',
+    },
+    footerContentText: {
+        fontSize: '0.75em',
+        fontFamily: 'Gill Sans MT',
+        color: theme.palette.secondary.light,
+    },
+    listFormatTitle: {
+        display: 'flex',
+        justifyContent: 'center',
+        paddingBottom: '0',
+    },
+    listFormatBody: {
+        display: 'flex',
+        justifyContent: 'center',
+        paddingTop: '0',
+
+    },
+    listText: {
+        color: theme.palette.secondary.light,
+        fontSize: '1.2em',
+        fontFamily: 'Gill Sans MT',
     }
     
 }));
