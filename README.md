@@ -1,12 +1,10 @@
 # MERN-Portfolio-Dev
-<img src="./Home layout.png">
+<img src="./design_files/Home.png">
 Welcome to the repo for my portfolio website. Check the change logs below for anything that I have added or changed with each major/minor update. Please keep in mind that this is my first project with JS, and material-ui and jsx styling is kinda annoying. Sometimes it works, sometimes it doesnt 🤷‍♂️. It takes 3 hrs of banging my head against the keyboard to make it display as per my designs. I would gladly take suggestions and code fixes for this mess, but I would like to ask that a detailed description is provided.
 
 ## Notes:
 
-Styling is so bad you think something would work but it doesnt apply when you save the files, there are so many little nuances that makes me bash my head into my desk.
-
-why are there so many frameworks 😩
+why are there so many frameworks 😩.
 
 
 ## Changelog
