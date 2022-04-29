@@ -4,8 +4,9 @@ Welcome to the repo for my portfolio website. Check the change logs below for an
 
 ## Notes:
 
-why are there so many frameworks 😩.
+- why are there so many frameworks 😩.
 
+- maybe github co-pilot can help
 
 ## Changelog
 
