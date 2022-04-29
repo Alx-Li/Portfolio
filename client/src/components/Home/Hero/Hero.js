@@ -12,7 +12,7 @@ const Hero = () => {
       <Box display="flex" flexDirection="row" >
         <Grid container>
           <Grid item lg={7}>
-            <Typography component='div' style={{backgroundColor:'#cfe8fc', height:'100vh'}}/>
+            <Typography component='div' style={{backgroundColor:'#cfe8fc', height:'90vh'}}/>
           </Grid>
           <Grid item lg={5}>
           <Fade in={true} timeout={{enter:3000}}>

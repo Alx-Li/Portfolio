@@ -10,6 +10,7 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Fun from './components/Fun/Fun';
 import Footer from './components/Footer/Footer';
+import Error from './components/Error/Error';
 
 import theme from './components/Theme/theme';
 import Navbar from './components/Navbar/Navbar';
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/contact" exact element={<Contact/>}/>         
           <Route path="/fun" exact element={<Fun/>}/>         
           <Route path="/upload" exact element={<Upload/>}/>
+          <Route path="*" exact element={<Error/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
