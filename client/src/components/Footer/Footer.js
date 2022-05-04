@@ -40,7 +40,7 @@ const Footer = () => {
           <Box className={classes.footerContentBox} sx={{ display: { xs: 'none', md: 'flex' },}}>
             <Typography className={classes.footerContentText}>
               ABOUT THE SITE <br/>
-              version 1.0.0-b<br/>
+              version 1.0.0-b development<br/>
               mongoDB | express.js | react.js | node.js <br/>
               <Link href='https://github.com/Alx-Li/MERN-Portfolio-Dev' target='_blank' color='inherit'>github repository</Link>
             </Typography>
@@ -84,7 +84,7 @@ const Footer = () => {
                 </ListItem>
                 <ListItem disableTypography className={classes.listFormatBody}>
                   <Typography className={classes.listText} align='center'>
-                    version 1.0.0-b | <Link href='https://github.com/Alx-Li/MERN-Portfolio-Dev' target='_blank' color='inherit'>github repository</Link> 
+                    version 1.0.0-b development | <Link href='https://github.com/Alx-Li/MERN-Portfolio-Dev' target='_blank' color='inherit'>github repository</Link> 
                   </Typography>
                   
                 </ListItem>
