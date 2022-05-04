@@ -60,7 +60,7 @@ const Hero = () => {
                 Currently pursuing a degree in CS.<br/>
               </Typography>
           {/* temporary while site is under construction */}
-              <Typography style={{fontFamily: 'Gill Sans MT', fontSize: '2vw', color: 'grey'}}><br/>Notice: this site is currently under construction, follow the repository on github to see my progress</Typography>
+              <Typography style={{fontFamily: 'Gill Sans MT', fontSize: '3vw', color: 'grey', textAlign: 'center'}}><br/>Notice: this site is currently under construction, <br/>follow the repository on github to see my progress</Typography>
           </Box>
         </Fade>
         <Box className={classes.spacer}/>

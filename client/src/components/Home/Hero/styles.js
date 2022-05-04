@@ -44,7 +44,7 @@ export default makeStyles((theme) => ({
     },
     bodyTextV:{
         fontFamily: 'Gill Sans MT',
-        fontSize: '3vw',
+        fontSize: '4vw',
         color: theme.palette.primary.main,
         textAlign: 'center',
     },

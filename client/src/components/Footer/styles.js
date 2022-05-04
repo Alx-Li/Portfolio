@@ -11,16 +11,16 @@ export default makeStyles((theme) => ({
             height: '20rem',
         },
         [theme.breakpoints.down(419)]: {
-            height: '22rem',
-        },
-        [theme.breakpoints.down(365)]: {
-            height: '23rem',
+            height: '24rem',
         },
         [theme.breakpoints.down(330)]: {
             height: '26rem',
         },
         [theme.breakpoints.down(296)]: {
             height: '28rem',
+        },
+        [theme.breakpoints.down(281)]: {
+            height: '32rem',
         },
     },
     logo: {
