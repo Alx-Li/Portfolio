@@ -2,6 +2,8 @@
 <img src="./design_files/Home.png">
 Welcome to the repo for my portfolio website. Check the change logs below for anything that I have added or changed with each major/minor update. Please keep in mind that this is my first project with JS, and material-ui and jsx styling is kinda annoying. Sometimes it works, sometimes it doesnt 🤷‍♂️. It takes 3 hrs of banging my head against the keyboard to make it display as per my designs. I would gladly take suggestions and code fixes for this mess, but I would like to ask that a detailed description is provided.
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbff7bc3-9ac0-4207-bcba-b7ceb01d42c6/deploy-status)](https://app.netlify.com/sites/axli/deploys)
 ## Notes:
 
 - why are there so many frameworks 😩.
