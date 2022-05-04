@@ -5,22 +5,22 @@ export default makeStyles((theme) => ({
         background: '#ffffff',
         height: '7.2rem',
         [theme.breakpoints.down('sm')]: {
-            height: '18rem',
-        },
-        [theme.breakpoints.down(682)]: {
             height: '20rem',
         },
-        [theme.breakpoints.down(419)]: {
-            height: '24rem',
+        [theme.breakpoints.down(682)]: {
+            height: '22rem',
         },
-        [theme.breakpoints.down(330)]: {
+        [theme.breakpoints.down(419)]: {
             height: '26rem',
         },
-        [theme.breakpoints.down(296)]: {
+        [theme.breakpoints.down(330)]: {
             height: '28rem',
         },
+        [theme.breakpoints.down(296)]: {
+            height: '30rem',
+        },
         [theme.breakpoints.down(281)]: {
-            height: '32rem',
+            height: '34rem',
         },
     },
     logo: {
