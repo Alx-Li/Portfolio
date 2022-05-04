@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Mobile and small window footer*/}
           <Box sx={{display: { md:'none' }, width:"100%"}}>
-              <List disablePadding width='100%'>
+              <List width='100%'>
                 <Divider/>
 
                 <ListItem disableTypography className={classes.listFormatTitle}>
