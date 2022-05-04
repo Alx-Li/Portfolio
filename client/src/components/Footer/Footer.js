@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Toolbar, List, ListItem, ListItemText, Divider, Link, IconButton, Typography} from '@material-ui/core'
+import { Box, Container, Toolbar, List, ListItem, Divider, Link, IconButton, Typography} from '@material-ui/core'
 
 import useStyles from './styles'
 import bottomLogo from './bottomLogo.svg'
@@ -40,7 +40,7 @@ const Footer = () => {
           <Box className={classes.footerContentBox} sx={{ display: { xs: 'none', md: 'flex' },}}>
             <Typography className={classes.footerContentText}>
               ABOUT THE SITE <br/>
-              version 0.2.0-b | development branch<br/>
+              version 1.0.0-b<br/>
               mongoDB | express.js | react.js | node.js <br/>
               <Link href='https://github.com/Alx-Li/MERN-Portfolio-Dev' target='_blank' color='inherit'>github repository</Link>
             </Typography>
@@ -84,7 +84,7 @@ const Footer = () => {
                 </ListItem>
                 <ListItem disableTypography className={classes.listFormatBody}>
                   <Typography className={classes.listText} align='center'>
-                    version 0.2.0-b | <Link href='https://github.com/Alx-Li/MERN-Portfolio-Dev' target='_blank' color='inherit'>github repository</Link> 
+                    version 1.0.0-b | <Link href='https://github.com/Alx-Li/MERN-Portfolio-Dev' target='_blank' color='inherit'>github repository</Link> 
                   </Typography>
                   
                 </ListItem>

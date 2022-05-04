@@ -2,13 +2,13 @@ import React from 'react';
 import useStyles from './styles';
 import WIP from '../WIP/WIP';
 
-const Projects = () => {
+const Login = () => {
   const classes = useStyles();
   return (
     <div>
-      <WIP/>
+      <WIP />
     </div>
-  );
+  )
 };
-
-export default Projects;
+//https://contactmentor.com/login-form-react-js-code/
+export default Login;

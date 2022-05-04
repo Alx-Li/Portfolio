@@ -10,6 +10,15 @@ Welcome to the repo for my portfolio website. Check the change logs below for an
 
 ## Changelog
 
+### v1.0.0-b
+I wanted to get this thing hosted, so I finished the home page and made a WIP logo for any pages that I have not completed. 
+
+[See the site here](https://www.alexli.tech/)
+
+Only the front-end portion is deployed on Netlify since the page that will acutally use the api and call from MongoDB is not fully completed, I considered Vercel but since I used it for the MountainMadness hackathon I wanted to try something new.
+
+I initially wanted to create a theme button to switch between a light and dark mode, but that seems to be a bit too much at the moment. Perhaps in the future. I do have some idea for how to implement it with redux, but I would also have to create a colour pallet and create a new set of logos which I don't want to do yet.
+
 ### v0.1.1-b 
 - Footer completely implemented, responsive to mobile devices and small windows
 - Set up environmental variables 

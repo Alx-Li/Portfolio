@@ -1,8 +1,15 @@
 import React from 'react';
+import useStyles from './styles';
+import WIP from '../WIP/WIP';
+
 
 const About = () => {
+  const classes = useStyles();
+
   return (
-    <div>About</div>
+    <div>
+      <WIP />
+    </div>
   );
 };
 

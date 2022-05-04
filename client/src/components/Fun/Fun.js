@@ -1,8 +1,13 @@
 import React from 'react';
+import useStyles from './styles';
+import WIP from '../WIP/WIP';
 
 const Fun = () => {
+  const classes = useStyles();
   return (
-    <div>Fun</div>
+    <div>
+      <WIP />
+    </div>
   );
 }
 

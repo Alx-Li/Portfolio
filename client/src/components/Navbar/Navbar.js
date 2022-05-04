@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import Brightness2Icon from  '@material-ui/icons/Brightness2';
+import SettingsIcon from '@material-ui/icons/Settings';
 import MenuIcon from '@material-ui/icons/Menu';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -48,14 +48,14 @@ const Navbar = () => {
             <Box sx={{ flexGrow: 0, display: { xs:'none', sm: 'none', md: 'flex' } }}>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='https://github.com/Alx-Li' target='_blank' title='Github'><GitHubIcon/></IconButton></Zoom>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='' target='_blank' disabled title='Linkedin'><LinkedInIcon/></IconButton></Zoom>
-              <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='https://www.instagram.com/ax_li.tech/' target='_blank' title='Instagram'><InstagramIcon/></IconButton></Zoom>
+              <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} disabled target='_blank' title='Instagram'><InstagramIcon/></IconButton></Zoom>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='#' disabled title='Twitter'><TwitterIcon/></IconButton></Zoom>
-              <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} disabled title='Dark Mode'><Brightness2Icon/></IconButton></Zoom>
+              <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} component={Link} to='/login' title='Settings'><SettingsIcon/></IconButton></Zoom>
             </Box>
 
             {/* what displays when screen is sm or smaller=====================================================================*/}
             <Box sx={{ flexGrow: 1, display: { sm: 'flex', md: 'none' } }}>
-                <Typography fontSize='2em'>˓˓ก₍⸍⸌̣ʷ̣̫⸍̣⸌₎ค˒˒</Typography>
+                <Typography fontSize='1em'>hi</Typography>
             </Box>
             
             
@@ -91,9 +91,9 @@ const Navbar = () => {
                   <ListItem className={classes.listIco}>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='https://github.com/Alx-Li' target='_blank' title='Github'><GitHubIcon/></IconButton>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='' target='_blank' disabled title='Linkedin'><LinkedInIcon/></IconButton>
-                    <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='https://www.instagram.com/ax_li.tech/' target='_blank' title='Instagram'><InstagramIcon/></IconButton>
+                    <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} disabled target='_blank' title='Instagram'><InstagramIcon/></IconButton>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='#' disabled title='Twitter'><TwitterIcon/></IconButton>
-                    <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} disabled title='Dark Mode'><Brightness2Icon/></IconButton>
+                    <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} component={Link} to='/login' title='Settings'><SettingsIcon/></IconButton>
                   </ListItem>
               </List>
             </Drawer>
