@@ -47,7 +47,7 @@ const Navbar = () => {
 
             <Box sx={{ flexGrow: 0, display: { xs:'none', sm: 'none', md: 'flex' } }}>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='https://github.com/Alx-Li' target='_blank' title='Github'><GitHubIcon/></IconButton></Zoom>
-              <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='' target='_blank' disabled title='Linkedin'><LinkedInIcon/></IconButton></Zoom>
+              <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='https://www.linkedin.com/in/alx-li/' target='_blank' title='Linkedin'><LinkedInIcon/></IconButton></Zoom>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} disabled target='_blank' title='Instagram'><InstagramIcon/></IconButton></Zoom>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} href='#' disabled title='Twitter'><TwitterIcon/></IconButton></Zoom>
               <Zoom in timeout={{enter:500}}><IconButton className={classes.icoButton} component={Link} to='/login' title='Settings'><SettingsIcon/></IconButton></Zoom>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Divider/>
                   <ListItem className={classes.listIco}>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='https://github.com/Alx-Li' target='_blank' title='Github'><GitHubIcon/></IconButton>
-                    <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='' target='_blank' disabled title='Linkedin'><LinkedInIcon/></IconButton>
+                    <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='https://www.linkedin.com/in/alx-li/' target='_blank' title='Linkedin'><LinkedInIcon/></IconButton>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} disabled target='_blank' title='Instagram'><InstagramIcon/></IconButton>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} href='#' disabled title='Twitter'><TwitterIcon/></IconButton>
                     <IconButton className={classes.icoButton} onClick={toggleDrawer(false)} component={Link} to='/login' title='Settings'><SettingsIcon/></IconButton>

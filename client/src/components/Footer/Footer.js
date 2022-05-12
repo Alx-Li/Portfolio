@@ -8,7 +8,7 @@ import bottomLogo from './bottomLogo.svg'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import Brightness2Icon from  '@material-ui/icons/Brightness2';
+import SettingsIcon from '@material-ui/icons/Settings';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Footer = () => {
@@ -92,10 +92,10 @@ const Footer = () => {
                 <Divider/>
                   <ListItem className={classes.listIco} >
                     <IconButton className={classes.icoButton} href='https://github.com/Alx-Li' target='_blank' title='Github'><GitHubIcon/></IconButton>
-                    <IconButton className={classes.icoButton} href='' target='_blank' disabled title='Linkedin'><LinkedInIcon/></IconButton>
-                    <IconButton className={classes.icoButton} href='https://www.instagram.com/ax_li.tech/' target='_blank' title='Instagram'><InstagramIcon/></IconButton>
+                    <IconButton className={classes.icoButton} href='https://www.linkedin.com/in/alx-li/' target='_blank' title='Linkedin'><LinkedInIcon/></IconButton>
+                    <IconButton className={classes.icoButton} href='' disabled target='_blank' title='Instagram'><InstagramIcon/></IconButton>
                     <IconButton className={classes.icoButton} href='#' disabled title='Twitter'><TwitterIcon/></IconButton>
-                    <IconButton className={classes.icoButton} disabled title='Dark Mode'><Brightness2Icon/></IconButton>
+                    <IconButton className={classes.icoButton} component={Link} to='/login' title='Settings'><SettingsIcon/></IconButton>
                   </ListItem>
               </List>
           </Box>
