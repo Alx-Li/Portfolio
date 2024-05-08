@@ -2,50 +2,29 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.26.1",
-    "moment": "^2.29.1",
-    "next": "^12.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-file-base64": "^1.0.3",
-    "react-icons": "^4.3.1",
-    "react-redux": "^7.2.6",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
-    "react-tsparticles": "^1.42.4",
-    "redux": "^4.1.2",
-    "redux-thunk": "^2.4.1",
-    "vivus": "^0.4.6",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.4",
+    "framer-motion": "^11.1.9",
+    "framer-motion-3d": "^11.1.9",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "three": "^0.164.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "sass": "^1.77.0",
+    "typescript": "^5"
   }
 }
