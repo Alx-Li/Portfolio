@@ -5,7 +5,7 @@ import Model from './Model';
 import { Environment } from '@react-three/drei'
 import { useMotionValue, useSpring, motion } from "framer-motion"
 
-export default function Index() {
+export default function LogoCanvas() {
 
   const mouse = {
     x: useMotionValue(0),
