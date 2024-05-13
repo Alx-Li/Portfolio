@@ -1,54 +1,87 @@
-import { useGLTF } from "@react-three/drei";
-import { Float } from "@react-three/drei";
-import { useTransform } from "framer-motion";
-import { motion } from "framer-motion-3d"
+import {  useGLTF } from "@react-three/drei";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 
-export default function Model({ mouse }) {
-  const { nodes, materials } = useGLTF("/models/logo.glb");
+function LogoMesh({ color, y_offset, delay, damping }) {
+  const group = useRef(null);
+  const { nodes } = useGLTF("/Logo/3d2.glb");
+  useFrame(({ clock }) => {
+    const time = clock.getElapsedTime();
+    group.current.rotation.y = 0.04 * time;
+    group.current.position.y =
+      1.4 * damping * Math.sin(1 * time + 2 * delay);
+  });
 
   return (
-    <Float>
-      <group 
-      scale={0.003} rotation={[0, 0, 0 ]}
-      >
-      {Object.keys(nodes).map((nodeName, index) => (
-          <Mesh
-            key={index}
-            node={nodes[nodeName]}
-            mouse={mouse}
-          />
-        ))}
+    <>
+      <group ref={group}>
+        {Object.keys(nodes).map((nodeName, index) => {
+          const { geometry, rotation, scale } = nodes[nodeName];
+          return (
+            <mesh
+              key={nodeName}
+              position={[0, y_offset, 0]}
+              geometry={geometry}
+              rotation={rotation}
+              scale={scale}
+            >
+              <meshToonMaterial color={color} />
+            </mesh>
+          );
+        })}
       </group>
-    </Float>
+    </>
   );
 }
 
-function Mesh({ node, mouse }) {
-  const {
-    castShadow,
-    receiveShadow,
-    geometry,
-    material,
-    position,
-    rotation,
-    scale,
-  } = node;
+export default function Model() {
 
-  const rotationX = useTransform(mouse.x, [0, 1], [rotation.x - 0.5, rotation.x + 0.5])
-  const rotationY = useTransform(mouse.y, [0, 1], [rotation.y - 0.5, rotation.y + 0.5])
   return (
-    <motion.mesh
-      castShadow={castShadow}
-      receiveShadow={receiveShadow}
-      geometry={geometry}
-      material={material}
-      position={position}
-      rotation={rotation}
-      scale={scale}
-      rotation-y={rotationX}
-      rotation-x = {rotationY}
-    />
+    <>
+      <LogoMesh
+        color={"#000000"}
+        y_offset={1}
+        delay={0}
+        damping={0.5}
+      />
+      <LogoMesh
+        color={"#2F2F2F"}
+        y_offset={0}
+        delay={(1 * Math.PI) / 8}
+        damping={0.4}
+      />
+      <LogoMesh
+        color={"#6F6F6F"}
+        y_offset={-1.0}
+        delay={(2 * Math.PI) / 8}
+        damping={0.4}
+      />
+      <LogoMesh
+        color={"#9A9A9A"}
+        y_offset={-2.2}
+        delay={(3 * Math.PI) / 8}
+        damping={0.5}
+      />
+      <LogoMesh
+        color={"#BFBFBF"}
+        y_offset={-3.5}
+        delay={(4 * Math.PI) / 8}
+        damping={0.5}
+      />
+      <LogoMesh
+        color={"#E2E2E2"}
+        y_offset={-5.1}
+        delay={(5 * Math.PI) / 8}
+        damping={0.7}
+      />
+      <LogoMesh
+        color={"#FDFDFD"}
+        y_offset={-7}
+        delay={(6 * Math.PI) / 8}
+        damping={1}
+      />
+    </>
   );
 }
 
-useGLTF.preload("/models/logo.glb");
+useGLTF.preload("/Logo/3d2.glb");

@@ -1,9 +1,15 @@
 import styles from "./page.module.scss";
-import LogoCanvas from "../components/Logo/LogoCanvas"
+
+import dynamic from "next/dynamic";
+
+const LogoScene = dynamic(() => import("@/components/Logo/Scene.jsx"), {
+  ssr: false,
+});
+
 export default function Home() {
   return (
     <main className={styles.main}>
-      <LogoCanvas/>
+      <LogoScene />
     </main>
   );
 }
