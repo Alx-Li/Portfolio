@@ -1,5 +1,6 @@
-import {  useGLTF } from "@react-three/drei";
+import { useGLTF, Plane } from "@react-three/drei";
 import { useRef } from "react";
+useGLTF.preload("/Logo/3d2.glb");
 import { useFrame } from "@react-three/fiber";
 
 function LogoMesh({ color, y_offset, delay, damping }) {
@@ -14,7 +15,7 @@ function LogoMesh({ color, y_offset, delay, damping }) {
 
   return (
     <>
-      <group ref={group}>
+      <group ref={group} scale={1.5} rotation-y={-Math.PI / 4}>
         {Object.keys(nodes).map((nodeName, index) => {
           const { geometry, rotation, scale } = nodes[nodeName];
           return (
@@ -52,36 +53,41 @@ export default function Model() {
       />
       <LogoMesh
         color={"#6F6F6F"}
-        y_offset={-1.0}
+        y_offset={-1.25}
         delay={(2 * Math.PI) / 8}
-        damping={0.4}
+        damping={0.5}
       />
       <LogoMesh
         color={"#9A9A9A"}
-        y_offset={-2.2}
+        y_offset={-2.5}
         delay={(3 * Math.PI) / 8}
-        damping={0.5}
+        damping={0.6}
       />
       <LogoMesh
         color={"#BFBFBF"}
-        y_offset={-3.5}
+        y_offset={-4.2}
         delay={(4 * Math.PI) / 8}
-        damping={0.5}
+        damping={0.8}
       />
       <LogoMesh
         color={"#E2E2E2"}
-        y_offset={-5.1}
+        y_offset={-6}
         delay={(5 * Math.PI) / 8}
-        damping={0.7}
+        damping={1.1}
       />
       <LogoMesh
         color={"#FDFDFD"}
-        y_offset={-7}
+        y_offset={-8.8}
         delay={(6 * Math.PI) / 8}
-        damping={1}
+        damping={1.5}
       />
+      <Plane
+        args={[900, 200]}
+        rotation={[6.6, 0, 0]}
+        position={[0, -20, -30]}
+      >
+        <meshBasicMaterial color="Black" transparent opacity={0.5} />
+      </Plane>
     </>
   );
 }
-
-useGLTF.preload("/Logo/3d2.glb");

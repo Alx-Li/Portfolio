@@ -4,31 +4,24 @@ import { Canvas } from "@react-three/fiber";
 import Model from "./Model.jsx";
 import { Suspense } from "react";
 import { Html, useProgress } from "@react-three/drei";
-import {
-  EffectComposer,
-  DepthOfField,
-  Noise,
-  DotScreen,
-} from "@react-three/postprocessing";
+import { EffectComposer, Noise, DotScreen } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
-import { OrbitControls } from "@react-three/drei";
+
 
 function Loader() {
-  const { progress, active } = useProgress();
+  const { progress } = useProgress();
 
   return <Html center>{progress.toFixed(1)} % loaded</Html>;
 }
 
 export default function Scene() {
-
   return (
     <Canvas
+      style={{ position: "absolute" }}
       orthographic
-      camera={{ position: [10, 15, 10], near: 0.1, far: 100, zoom: 25 }}
+      camera={{ position: [0, 20, 20], near: 0.1, far: 200, zoom: 20 }}
     >
-      <color attach="background" args={["#AFAFAF00"]} />
-      <fog attach="fog" args={["#FFFFFF", 15, 50]} />
-      {/* <OrbitControls /> */}
+      <fog attach="fog" args={["#FFFFFF", 25, 65]} />
       <directionalLight
         position={[-4, 1, 4]}
         intensity={3.8}
@@ -38,20 +31,14 @@ export default function Scene() {
         <Model />
       </Suspense>
       <EffectComposer multisampling={0} disableNormalPass={true}>
-        <DepthOfField
-          focusDistance={0.12}
-          focalLength={0.2}
-          bokehScale={5}
-          height={480}
-          focusRange={0.4}
-        />
+        {/* no: OVERLAY, SCREEN*/}
         <DotScreen
-          blendFunction={BlendFunction.COLOR_DODGE} // blend mode
+          blendFunction={BlendFunction.LIGHTEN} // LIGHTEN, COLOR_DODGE
           angle={Math.PI * 0.5} // angle of the dot pattern
-          scale={1.0} // scale of the dot pattern
-          opacity={0.8}
+          scale={0.9} // scale of the dot pattern
+          opacity={0.8} // 0.1 w MULTIPLY,
         />
-        <Noise opacity={0.035} />
+        <Noise opacity={0.04} />
       </EffectComposer>
     </Canvas>
   );
